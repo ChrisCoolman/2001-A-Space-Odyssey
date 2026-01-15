@@ -1,0 +1,60 @@
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  color: white;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#canvas {
+    /* Make the canvas act like a background element*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Put canvas behind everything */
+    background-color: black;
+}
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  font-size: 32px;
+  margin-bottom: 0px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+}
+
+.container {
+  text-align: center;
+  text-wrap: balance;
+  margin: 60px;
+  padding: 10px;
+}
+
+.vertical-line {
+  border-left: 4px solid white; /* Width, style, and color of the line */
+  height: 500px; /* Length of the line */
+  margin: 0 auto; /* Centers the block-level element horizontally */
+  width: 0;        /* Ensures it stays as a thin line */
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  font-size: 32px;
+  margin-bottom: 0px;
+}

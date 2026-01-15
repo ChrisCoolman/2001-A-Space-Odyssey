@@ -9,6 +9,10 @@ body, html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+p {
+  background-color: black;
+}
+
 #canvas {
     /* Make the canvas act like a background element*/
     position: fixed;
@@ -44,7 +48,7 @@ header {
 
 .vertical-line {
   border-left: 4px solid white; /* Width, style, and color of the line */
-  height: 500px; /* Length of the line */
+  height: 1000px; /* Length of the line */
   margin: 0 auto; /* Centers the block-level element horizontally */
   width: 0;        /* Ensures it stays as a thin line */
 }

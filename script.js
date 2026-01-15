@@ -2,6 +2,7 @@ let starsX = [];
 let starsY = [];
 let starsZ = [];
 let lastScrollY = window.scrollY;
+let amountOfStars = 500;
 
 function random(min, max) {
   return Math.random() * (max - min) + min;
@@ -17,7 +18,7 @@ function resizeCanvas() {
 
 function drawStars() {
   ctx.fillStyle = "rgb(255 255 255)";
-  for(let i = 0; i < 500; i++) {
+  for(let i = 0; i < amountOfStars; i++) {
     let x = random(0, window.innerWidth);
     let y = random(0, window.innerHeight);
     starsX.push(x);
@@ -35,8 +36,7 @@ addEventListener("scroll", (event) => { })
 onscroll = (event) => {
   const currentScrollY = window.scrollY;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  for(let i = 0; i < 500; i++) {
-    ctx.fillStyle = "rgb(255 255 255)";
+  for(let i = 0; i < amountOfStars; i++) {
     if (currentScrollY > lastScrollY) {
       starsY[i] = starsY[i] - starsZ[i];
     }
